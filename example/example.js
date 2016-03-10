@@ -1,3 +1,3 @@
-import mix from 'es6-mixins';
+import es6Mixins from 'es6-mixins';
 
-mix();
+es6Mixins();
