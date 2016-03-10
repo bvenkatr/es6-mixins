@@ -10,6 +10,6 @@ npm install --save @nsisodiya/es6-mixins
 # Usage
 
 ```
-import mix from 'es6-mixins';
-mix();
+import es6Mixins from '@nsisodiya/es6-mixins';
+es6Mixins();
 ```
