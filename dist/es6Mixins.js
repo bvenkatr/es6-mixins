@@ -70,13 +70,12 @@
 
 			"use strict";
 
-			/**
-			 * Created by narendrasisodiya on 10/03/16.
-			 */
+			/*
 
-				// 2016 - (c) Narendra Sisodiya, narendra@narendrasisodiya.com
-				// MIT License
-				// Feedback - Twitter me - https://twitter.com/nsisodiya
+			 The MIT License (MIT)
+			 Copyright (c) 2016 Narendra Sisodiya https://github.com/nsisodiya
+
+			 */
 
 			module.exports = function () {
 				console.log("ES6 + Webpack is Working");
