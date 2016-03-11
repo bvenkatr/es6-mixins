@@ -10,9 +10,9 @@ module.exports = {
 		library: "[name]"
 	},
 	externals: {
-		"es6-mixins": {
-			commonjs: 'es6-mixins',
-			commonjs2: 'es6-mixins',
+		"@nsisodiya/es6-mixins": {
+			commonjs: '@nsisodiya/es6-mixins',
+			commonjs2: '@nsisodiya/es6-mixins',
 			amd: 'es6Mixins',
 			root: 'es6Mixins'
 		}
