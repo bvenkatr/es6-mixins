@@ -1,14 +1,13 @@
 {
 	"name": "@nsisodiya/es6-mixins",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "ES6 Mixins, Useful for adding Mixin support to React Component when you use ES6 class syntax",
 	"main": "dist/es6Mixins.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"watch": "webpack --watch &",
 		"server": "cd dist ; live-server",
-		"build": "npm run watch ; npm run server",
-		"prepublish": "webpack"
+		"build": "npm run watch ; npm run server"
 	},
 	"repository": {
 		"type": "git",
