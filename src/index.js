@@ -5,7 +5,6 @@
 
  */
 
-
 module.exports = function () {
 	console.log("ES6 + Webpack is Working");
 	["a", "b"].map((v)=> {
