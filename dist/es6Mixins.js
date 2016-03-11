@@ -68,7 +68,7 @@
 		/* 0 */
 		/***/ function (module, exports) {
 
-			"use strict";
+			'use strict';
 
 			/*
 
@@ -77,10 +77,28 @@
 
 			 */
 
-			module.exports = function () {
-				console.log("ES6 + Webpack is Working");
-				["a", "b"].map(function (v) {
-					console.log(v);
+			module.exports = function (Main, Rest) {
+				Rest.map(function (v) {
+					return Object.getOwnPropertyNames(v.prototype);
+				}).reduce(function (a, b) {
+					return a.concat(b);
+				}, []).filter(function (item, pos, arr) {
+					return arr.indexOf(item) === pos && item !== 'constructor';
+				}).map(function (method) {
+					var backup = Main.prototype[method];
+					Main.prototype[method] = function () {
+						var _this = this,
+								_arguments = arguments;
+
+						Rest.map(function (v) {
+							if (typeof v.prototype[method] === "function") {
+								v.prototype[method].apply(_this, _arguments);
+							}
+				});
+						if (typeof backup === 'function') {
+							backup.apply(this, arguments);
+						}
+			};
 				});
 			};
 
